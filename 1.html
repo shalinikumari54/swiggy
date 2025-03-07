@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Hover & Animation Effects */
+        .nav-link {
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+        .header {
+            animation: slideDown 0.5s ease-in-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="header bg-orange-500 shadow-lg p-4 flex items-center justify-between">
+        <!-- Left Side: Swiggy Logo & Dropdown -->
+        <div class="flex items-center space-x-4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Swiggy_logo.png" alt="Swiggy Logo" class="w-12 h-12">
+            <select class="p-2 rounded bg-white shadow-md cursor-pointer">
+                <option>Select Location</option>
+                <option>Hyderabad</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+            </select>
+        </div>
+
+        <!-- Right Side: Menu Items -->
+        <nav class="flex space-x-6 text-white text-lg">
+            <a href="#" class="nav-link"> <i class="fa-solid fa-percent"></i>Offers</a>
+            <a href="#" class="nav-link"> <i class="fa-brands fa-hire-a-helper"></i>Help</a>
+            <a href="#" class="nav-link"> <i class="fa-solid fa-user"></i>Sign In</a>
+            <a href="#" class="nav-link flex items-center">
+                <span>Cart</span>
+                🛒
+            </a>
+            <input type="text" placeholder="Search" class="p-2 rounded bg-white shadow-md focus:outline-none">
+        </nav>
+    </header>
+</body>
+</html>

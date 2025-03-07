@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac);
+    margin: 0;
+    padding: 0;
+    display: block; /* Remove flex to prevent centering */
+    min-height: 100vh;
+}
+
+/* Center the form properly */
+.help-container {
+    max-width: 450px;
+    margin: 50px auto; /* Add margin to avoid overlap */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Heading */
+.help-container h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+label i {
+    margin-right: 8px;
+    color: #ff6a88;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #ff6a88;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 106, 136, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background: #ff6a88;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #ff3b6f;
+}
+
+/* Ticket Section */
+.hidden {
+    display: none;
+}
+
+#ticket-section {
+    background: #ff6a88;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.8s ease-in-out;
+}
+
+#ticket-id {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .help-container {
+        width: 95%;
+        padding: 15px;
+    }
+}

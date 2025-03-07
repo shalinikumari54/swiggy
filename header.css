@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5200;
+    padding: 15px 30px;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-item {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.nav-item:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+.dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.search-box {
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+.logo {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+a{
+    color:white;
+    text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+
+}

@@ -1,0 +1,83 @@
+/* Footer Container */
+footer {
+    background: #0f1111; /* Black like Swiggy */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Top Section */
+.footer-top {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f5a623; /* Geru Color */
+    font-weight: bold;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f5a623; /* Geru Color */
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+/* Social Media Icons */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #f5a623; /* Geru Color */
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* Copyright */
+.footer-bottom p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}

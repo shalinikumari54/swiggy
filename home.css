@@ -1,0 +1,158 @@
+/* Apply gradient background */
+/* body {
+    background: linear-gradient(to right, #e89e59, #db8383, #d2b487);
+    
+} */
+/* Wishlist Section Styling */
+.wish {
+    background: #ffcc99; /* Light Dim Orange Background */
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    width: 100%; /* Full-width section */
+    max-width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Centering Content */
+.wish-heading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+    animation: slideInDown 1s ease-in-out;
+}
+
+/* Food Container */
+.food-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Individual Food Item */
+.food-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Food Image */
+.food-item img {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Food Name */
+.food-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.food-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: #ffe5cc; /* Light pastel orange on hover */
+}
+
+/* Image Zoom Effect */
+.food-item:hover img {
+    transform: scale(1.15);
+}
+
+/* Text Color Change */
+.food-item:hover p {
+    color: #ff6600; /* Dark orange */
+}
+
+/* Background Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+/*
+
+*/
+
+
+
+/*/next  part*/
+
+.home-content {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #ff5500;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    height: 250px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
